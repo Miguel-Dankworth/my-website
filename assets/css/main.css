@@ -13,7 +13,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background: url('/assets/media/pictures/right_landscape-whitebg.jpg') no-repeat;
+    background: url('assets/media/pictures/right_landscape-whitebg.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -205,4 +205,5 @@ nav ul li a:hover::after {
     --violet-pastelcolor: rgb(56, 56, 114);
 
 }
+
 
