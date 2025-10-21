@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    background-color: fff;
+    font-family: var(--primary-font);
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/media/pictures/right_landscape-whitebg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-wrap {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: rgb(15, 15, 15);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 1.5px currentColor;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+
+#brand {
+    font-family: var(--cursive);
+    font-size: 3rem;
+    color: rgb(49, 47, 47);
+
+}
+
+.introduction {
+    font-size: 2rem;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+
+#description {
+    width: 50%;
+    margin-bottom: 25px;
+    font-size: 4rem;
+    color:var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+#role {
+    width: 50%;
+    font-family: var(--quote);
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(53, 52, 52);
+}
+
+.action-button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.message {
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+}
+
+.resume {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.message:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.resume:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.main-wrap {
+
+}
+
+
+/*Profile*/
+
+#about {
+    padding: 80px 0;
+    color: black;
+}
+/*Services*/
+/*Blog*/
+/*Contacts*/
+#about {
+    padding: 80px 0;
+    color: black;
+
+}
+
+.profile {
+    background-color: rgb(145, 74, 74);
+    width: 100%;
+    height: 100vh;
+}
+.services {
+    background-color: rgb(136, 153, 61);
+    width: 100%;
+    height: 100vh;
+}
+
+.blog {
+    background-color: rgb(79, 156, 72);
+    width: 100%;
+    height: 100vh;  
+}
+
+.contacts {
+    background-color: rgb(67, 143, 153);
+    width: 100%;
+    height: 100vh;
+}
+
+/*Scroll button*/
+#scroll2Top {
+    position: fixed;
+    font-size: 1rem;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: #00101133;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+    visibility: hidden;
+    transition: opacity 0.3s, ease, visibility 0.3s ease;
+}
+
+#scroll2Top.show {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+
+
+:root {
+    --primary-color: #055358;
+    --secondary-color: #FE8C03;
+
+    --light-text-color: #F1FAEE;
+    --dark-text-color: #0D0D0D;
+
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Gruppo", sans-serif;
+    --cursive: "Yesteryear", cursive;
+    --quote: "Montagu Slab", serif;
+
+    --violet-pastelcolor: rgb(56, 56, 114);
+}
